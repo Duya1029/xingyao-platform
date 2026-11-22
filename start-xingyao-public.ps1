@@ -42,6 +42,7 @@ if ($url) {
     Write-Host '公网访问地址：' -NoNewline
     Write-Host $url -ForegroundColor Yellow
     Write-Host '把上面的链接发给别人，任何网络都能打开。' -ForegroundColor Gray
+    Set-Content -Path (Join-Path $root '当前公网地址.txt') -Value $url -Encoding UTF8
 } else {
     Write-Host '未能自动获取链接，请查看 cpolar 窗口中的 https://xxxx.r49.cpolar.top 地址。' -ForegroundColor Red
 }
