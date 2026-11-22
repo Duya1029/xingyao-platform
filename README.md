@@ -4,9 +4,12 @@
 
 ## 在线演示
 
-🔗 https://32d429a3.r49.cpolar.top
+🔗 https://duya1029.github.io/xingyao-platform/
 
-> 免费隧道地址每次重启会变化，以启动窗口打印的地址为准；演示期间电脑需保持开机。
+这是纯前端演示版（GitHub Pages），打开即可登录体验，不需要启动任何本地服务。
+账号：`admin` / `123456`。数据保存在浏览器本地，各设备之间不共享，刷新不会丢失登录状态。
+
+本地完整版（Spring Boot + SQL Server）仍通过 `启动-星曜平台.bat` 运行；演示版构建命令：`npm run build -- --mode demo`，产物在 `docs/`。
 
 | 角色 | 账号 | 密码 | 可见范围 |
 | --- | --- | --- | --- |

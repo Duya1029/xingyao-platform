@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
 import { useUserStore } from '../store/user'
 
 const routes = [
@@ -32,7 +32,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: import.meta.env.VITE_DEMO === '1' ? createWebHashHistory() : createWebHistory(),
   routes
 })
 

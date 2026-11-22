@@ -1,10 +1,12 @@
 import axios from 'axios'
 import { ElMessage } from 'element-plus'
 import router from '../router'
+import { DEMO, demoAdapter } from '../mock/adapter'
 
 const request = axios.create({
   baseURL: '/api',
-  timeout: 60000
+  timeout: 60000,
+  adapter: DEMO ? demoAdapter : undefined
 })
 
 request.interceptors.request.use((config) => {

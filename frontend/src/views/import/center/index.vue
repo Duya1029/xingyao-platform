@@ -77,6 +77,7 @@
 import { onMounted, reactive, ref } from 'vue'
 import { ElMessage } from 'element-plus'
 import { getImportTypes, uploadImport, pageImportBatches, getImportErrors } from '../../../api'
+import { DEMO, downloadDemoTemplate } from '../../../mock/adapter'
 
 const types = ref([])
 const bizType = ref('')
@@ -98,6 +99,10 @@ const onFileChange = (uploadFile) => {
 }
 
 const downloadTemplate = async () => {
+  if (DEMO) {
+    downloadDemoTemplate(bizType.value)
+    return
+  }
   const resp = await fetch(`/api/import/template/${bizType.value}`, {
     headers: { Authorization: `Bearer ${localStorage.getItem('xy_token') || ''}` }
   })
