@@ -1,0 +1,22 @@
+# 依赖与构建产物
+target/
+node_modules/
+dist/
+*.log
+*.err
+/package-lock.json
+
+# 本地工具
+tools/
+tmp_npm/
+
+# 上传文件
+uploads/
+
+# 本地真实配置（含数据库密码与 JWT 密钥，不入库）
+backend/src/main/resources/application.yml
+
+# IDE
+.idea/
+.vscode/
+*.iml

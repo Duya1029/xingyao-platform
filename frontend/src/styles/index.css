@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+  background: #f4f6f9;
+  color: #1f2937;
+}
+
+.page-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px 18px 18px;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.06);
+}
+
+.page-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.page-toolbar .spacer {
+  flex: 1;
+}
+
+.page-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.page-sub {
+  color: #8a94a6;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.pager {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 14px;
+}
+
+.mono {
+  font-family: Consolas, "Courier New", monospace;
+}
+
+@media (max-width: 768px) {
+  .page-card {
+    padding: 12px;
+    border-radius: 6px;
+  }
+  .page-toolbar .el-input,
+  .page-toolbar .el-select {
+    width: 100% !important;
+  }
+  .page-toolbar .spacer {
+    display: none;
+  }
+  .el-dialog {
+    width: 94% !important;
+    margin-top: 8vh !important;
+  }
+  .el-message-box {
+    width: 90% !important;
+  }
+  .pager {
+    justify-content: center;
+  }
+  .el-pagination {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 6px;
+  }
+}
