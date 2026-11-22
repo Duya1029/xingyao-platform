@@ -2,6 +2,18 @@
 
 面向中小制造企业的一体化数字化平台，覆盖 **WMS 仓储 / MES 制造 / ERP 经营**，并提供 Excel 导入中心与图纸批量识别。
 
+## 在线演示
+
+🔗 https://32d429a3.r49.cpolar.top
+
+> 免费隧道地址每次重启会变化，以启动窗口打印的地址为准；演示期间电脑需保持开机。
+
+| 角色 | 账号 | 密码 | 可见范围 |
+| --- | --- | --- | --- |
+| 管理员 | admin | 123456 | 全部模块 |
+| MES 操作员 | zhangwei | 123456 | 工作台、MES、WMS、ERP |
+| 只读用户 | lina / wangqiang / liuyang | 123456 | 工作台、WMS、ERP |
+
 ## 技术栈
 
 - 后端：Java 21 + Spring Boot 3.5 + MyBatis-Plus + JWT
